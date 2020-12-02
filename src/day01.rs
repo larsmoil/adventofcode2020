@@ -1,7 +1,6 @@
 use std::vec::Vec;
 
-pub use crate::expenses::{example_input, input};
-pub use crate::expenses::sums_to;
+pub use crate::expenses::{example_input, input, sums_to};
 
 pub fn pt1(input: Vec<i32>) -> i32 {
     sums_to(2020, 2, &input).unwrap().iter().fold(1, |a, b| a * b)
